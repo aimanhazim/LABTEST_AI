@@ -166,7 +166,8 @@ with col1:
 
 with col2:
     occupancy = st.selectbox("👥 Occupancy Status", ["OCCUPIED", "EMPTY"])
-    time_of_day = st.radio("🕒 Time of Day", ["DAY", "NIGHT"], horizontal=True)
+    time_of_day = st.radio("🕒 Time of Day", ["DAY", "AFTERNOON", "EVENING", "NIGHT"], horizontal=True)
+
 
 with col3:
     windows_open = st.checkbox("🪟 Windows are open", value=False)
