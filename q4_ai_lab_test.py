@@ -28,10 +28,11 @@ st.caption("Sentence-level chunking from PDF using NLTK")
 # Download NLTK resources (cached)
 # -------------------------------
 @st.cache_resource
-def download_nltk():
+def download_nltk_data():
     nltk.download("punkt")
+    nltk.download("punkt_tab")
 
-download_nltk()
+download_nltk_data()
 
 # -------------------------------
 # Step 1: Upload PDF file
