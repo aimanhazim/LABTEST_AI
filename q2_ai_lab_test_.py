@@ -202,12 +202,12 @@ st.json(facts)
 if run:
     action, fired_rules = run_rules(facts, DEFAULT_RULES)
 
-    st.subheader("Selected AC Action")
-    st.info(
+   st.subheader("Final AC Action")
+    st.success(
         f"""
-        **Mode:** {action['mode']}
-        **Fan Speed:** {action['fan_speed']}
-        **Setpoint:** {action['setpoint']}
+        **Mode:** {action['mode']}  
+        **Fan Speed:** {action['fan_speed']}  
+        **Setpoint:** {action['setpoint']}  
         **Reason:** {action['reason']}
         """
     )
