@@ -95,6 +95,8 @@ with st.sidebar:
     st.write(f"Population Size: **{POP_SIZE}**")
     st.write(f"Gene Length: **{GENE_LENGTH}**")
     st.write(f"Max Generations: **{MAX_GEN}**")
+    st.write(f"Fitness Peaks at Ones: **{FITNESS_PEAKS_AT_ONES}**")
+    st.write(f"Max Fitness: **{MAX_FITNESS} generations**")
     st.write(f"Crossover Rate (PC): **{PC}**")
     st.write(f"Mutation Rate (PM): **{PM}**")
     st.write(f"Elites: **{ELITE}**")
